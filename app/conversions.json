@@ -1,0 +1,22 @@
+[
+    {
+        "from": "kg",
+        "to": "lb",
+        "ratio": 2.20462
+    },
+    {
+        "from": "km",
+        "to": "mile",
+        "ratio": 0.621371
+    },
+    {
+        "from": "l",
+        "to": "gal",
+        "ratio": 0.264172
+    },
+    {
+        "from": "l",
+        "to": "ounce",
+        "ratio": 33.814
+    }
+]

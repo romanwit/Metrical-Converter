@@ -1,6 +1,7 @@
 const React = require("react");
 const Form = require("react-bootstrap").Form;
 const Button = require("react-bootstrap").Button;
+const Col = require("react-bootstrap").Col;
 
 class Conversion extends React.Component {
 
@@ -35,19 +36,25 @@ class Conversion extends React.Component {
 
     render() {
         return <div><Form.Group className="row">
-            <Button onClick={this.switch.bind(this)}></Button>
-            <Form.Control type="number" value={this.state.amount}
-                onChange={e => {
-                    this.setState({ amount: e.target.value });
-                }} >
-            </Form.Control>
-            <this.labels
-                metricalToImperial={this.state.metricalToImperial}
-                from={this.props.from}
-                to={this.props.to}
-                ratio={this.props.ratio}
-                amount={this.state.amount}
-            />
+            <Col xs={1}>
+                <Button variant="primary" onClick={this.switch.bind(this)}></Button>
+            </Col>
+            <Col xs={6}>
+                <Form.Control type="number" value={this.state.amount}
+                    onChange={e => {
+                        this.setState({ amount: e.target.value });
+                    }} >
+                    </Form.Control>
+            </Col>
+            <Col xs={5}>
+                <this.labels 
+                    metricalToImperial={this.state.metricalToImperial}
+                    from={this.props.from}
+                    to={this.props.to}
+                    ratio={this.props.ratio}
+                    amount={this.state.amount}
+                    />
+            </Col>
         </Form.Group></div>;
        
     }

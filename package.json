@@ -14,7 +14,9 @@
         "react-bootstrap": "^2.9.2",
         "react-dom": "18.0.0",
         "react-redux": "7.2.8",
-        "redux": "4.1.2"
+        "redux": "4.1.2",
+        "css-loader": "^6.8.1",
+        "style-loader": "^3.3.3"
     },
     "devDependencies": {
         "@babel/cli": "7.17.0",

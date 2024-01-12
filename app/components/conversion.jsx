@@ -37,7 +37,7 @@ class Conversion extends React.Component {
 
     render() {
         return <div><Form.Group className="row">
-            <Col xs={1}>
+            <Col xs={1} style={{ display: 'flex', justifyContent: 'right' }}>
                 <Button variant="primary" onClick={this.switch.bind(this)}>
                     <Arrows/>
                 </Button>

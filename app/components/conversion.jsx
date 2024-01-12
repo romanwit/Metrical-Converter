@@ -2,6 +2,7 @@ const React = require("react");
 const Form = require("react-bootstrap").Form;
 const Button = require("react-bootstrap").Button;
 const Col = require("react-bootstrap").Col;
+const Arrows = require("react-bootstrap-icons").ArrowLeftRight;
 
 class Conversion extends React.Component {
 
@@ -37,7 +38,9 @@ class Conversion extends React.Component {
     render() {
         return <div><Form.Group className="row">
             <Col xs={1}>
-                <Button variant="primary" onClick={this.switch.bind(this)}></Button>
+                <Button variant="primary" onClick={this.switch.bind(this)}>
+                    <Arrows/>
+                </Button>
             </Col>
             <Col xs={6}>
                 <Form.Control type="number" value={this.state.amount}
